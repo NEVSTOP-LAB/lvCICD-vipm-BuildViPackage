@@ -40,7 +40,7 @@ jobs:
         uses: NEVSTOP-LAB/lvCICD-vipm-BuildViPackage@main
         with:
           LabVIEW_Version: 2017
-          vipbPath: ${{ github.workspace }}
+          VipbPath: ${{ github.workspace }}
 
       # - name: Upload a Build Artifact
       #   uses: actions/upload-artifact@v3.0.0
