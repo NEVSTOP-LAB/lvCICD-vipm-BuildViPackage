@@ -27,7 +27,7 @@ inputs:
     required: false
     default: "NO"
 outputs:
-  vipFullName:
+  vipPathName:
     description: "Full Path of vip file built"
     value: ${{ steps.BuildDailyVIP.outputs.Result }}
   vipPath:
