@@ -26,6 +26,7 @@ inputs:
     description: "YES/NO, NO as default"
     required: false
     default: "NO"
+    
 outputs:
   vipPathName:
     description: "Full Path of vip file built"
@@ -36,11 +37,11 @@ outputs:
   vipName:
     description: "File name of vip file built"
     value: ${{ steps.vip-name.outputs.vipName }}
+    
 runs:
   using: "composite"
 
   steps:
-
     - id: build-vip
       uses: LV-APT/lvCICD@main
       with:
