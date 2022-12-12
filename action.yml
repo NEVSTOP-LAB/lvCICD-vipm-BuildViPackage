@@ -18,10 +18,6 @@ inputs:
     description: "vipb File Path, if it's a folder, use the first matched vipb file to build."
     required: false
     default: ""
-  VipbVersion:
-    description: "Version: x.x.x.x, or empty to use date of year.month.day.time"
-    required: false
-    default: ""
   Install:
     description: "YES/NO, NO as default"
     required: false
@@ -48,9 +44,8 @@ runs:
         LabVIEW_Version: ${{ inputs.LabVIEW_Version }}
         Architecture: ${{ inputs.Architecture }}
         Operation: vipm_BuildDailyVIP
-        Parameter1: ${{ inputs.VipbFilePath }}
-        Parameter2: ${{ inputs.VipbVersion }}
-        Parameter3: ${{ inputs.Install }}
+        Parameter1: ${{ inputs.VipbPath }}
+        Parameter2: ${{ inputs.Install }}
 
     - id: vip-name
       run: |
