@@ -26,7 +26,7 @@ inputs:
 outputs:
   vipPathName:
     description: "Full Path of vip file built"
-    value: ${{ steps.BuildDailyVIP.outputs.Result }}
+    value: ${{ steps.build-vip.outputs.Result }}
   vipPath:
     description: "Folder of vip file built"
     value: ${{ steps.vip-name.outputs.vipPath }}

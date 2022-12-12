@@ -47,7 +47,7 @@ jobs:
         with:
           # Artifact name
           name: ${{ steps.build-vip.outputs.vipName }}
-          path: ${{ steps.build-vip.outputs.vipPath }}
+          path: ${{ steps.build-vip.outputs.vipPathName }}
           # The desired behavior if no files are found using the provided path.
           if-no-files-found: warn
           retention-days: 90
