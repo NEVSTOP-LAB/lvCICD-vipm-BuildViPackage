@@ -41,8 +41,7 @@ runs:
 
   steps:
 
-    - name: BuildDailyVIP
-      id: build-vip
+    - id: build-vip
       uses: LV-APT/lvCICD@main
       with:
         LabVIEW_Version: ${{ inputs.LabVIEW_Version }}
