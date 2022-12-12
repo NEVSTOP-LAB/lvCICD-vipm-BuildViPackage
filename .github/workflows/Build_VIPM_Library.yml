@@ -46,8 +46,8 @@ jobs:
         uses: actions/upload-artifact@v3.0.0
         with:
           # Artifact name
-          name: ${{ steps.vip-name.outputs.vipName }}
-          path: ${{ steps.build-vip.outputs.Result }}
+          name: ${{ steps.build-vip.outputs.vipName }}
+          path: ${{ steps.build-vip.outputs.vipPath }}
           # The desired behavior if no files are found using the provided path.
           if-no-files-found: warn
           retention-days: 90
