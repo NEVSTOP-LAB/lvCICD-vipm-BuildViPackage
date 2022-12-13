@@ -1,4 +1,4 @@
-name: "lvCICD-vipm-BuildViPackage"
+name: "vipm-BuildViPackage"
 author: "NEVSTOP"
 description: "CICD Action for build VIPM package file"
 branding:
