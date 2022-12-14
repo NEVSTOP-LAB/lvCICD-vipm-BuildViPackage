@@ -1,4 +1,4 @@
-# lvCICD-vipm-BuildViPackage
+# vipm-BuildViPackage
 
 use [lvcicd:BuildDailyVIP](https://github.com/LV-APT/lvCICD/blob/main/docs/Operation-List.md#vipm_buildvipackage--build-vipm-library) to build vipm package.
 
